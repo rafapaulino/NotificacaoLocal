@@ -14,6 +14,29 @@
 
 @implementation PrincipalViewController
 
+
+-(IBAction)agendarNotificacaoClicado:(id)sender
+{
+    //criando uma notificacao local
+    UILocalNotification *avisoLocal = [[UILocalNotification alloc] init];
+    
+    NSDate *dataDisparo = [NSDate dateWithTimeIntervalSinceNow:10];
+    //configurando a notificacao
+    avisoLocal.fireDate = dataDisparo;
+    
+    avisoLocal.alertBody = @"Notificação do app!";
+    
+    //exibe uma imagem antes do app iniciar
+    avisoLocal.alertLaunchImage = @"wallpaper0.jpg";
+    
+    avisoLocal.userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"info1",nil];
+    
+    //agendando uma notificacao local no ios
+    [[UIApplication sharedApplication] scheduleLocalNotification:avisoLocal];
+    
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

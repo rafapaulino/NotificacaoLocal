@@ -10,6 +10,19 @@
 
 @implementation PrincipalAppDelegate
 
+//metodo chamado toda vez que uma notificacao e recebida e o app é aberto
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"Recebi uma notificacao local!");
+    
+     NSLog(@"Informacoes adicionais %@", notification.userInfo.description);
+    
+    //[[[UIAlertView alloc] initWithTitle:@"notificação" message:@"Vc recebeu uma notificacao local" delegate:nil cancelButtonTitle:@"Fechar" otherButtonTitles:nil] show];
+    
+    [[[UIAlertView alloc] initWithTitle:@"notificação" message:[notification.userInfo objectForKey:@"info1"] delegate:nil cancelButtonTitle:@"Fechar" otherButtonTitles:nil] show];
+
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

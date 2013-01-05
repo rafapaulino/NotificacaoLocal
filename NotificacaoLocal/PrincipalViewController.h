@@ -10,4 +10,6 @@
 
 @interface PrincipalViewController : UIViewController
 
+-(IBAction)agendarNotificacaoClicado:(id)sender;
+
 @end

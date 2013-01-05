@@ -20,6 +20,7 @@
 		6A163475160761050012DC9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A163456160761040012DC9A /* Foundation.framework */; };
 		6A16347D160761050012DC9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A16347B160761050012DC9A /* InfoPlist.strings */; };
 		6A163480160761050012DC9A /* NotificacaoLocalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A16347F160761050012DC9A /* NotificacaoLocalTests.m */; };
+		6A16348A1607650E0012DC9A /* wallpaper0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A1634891607650E0012DC9A /* wallpaper0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6A16347C160761050012DC9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A16347E160761050012DC9A /* NotificacaoLocalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificacaoLocalTests.h; sourceTree = "<group>"; };
 		6A16347F160761050012DC9A /* NotificacaoLocalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificacaoLocalTests.m; sourceTree = "<group>"; };
+		6A1634891607650E0012DC9A /* wallpaper0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				6A163463160761040012DC9A /* PrincipalAppDelegate.h */,
 				6A163464160761040012DC9A /* PrincipalAppDelegate.m */,
+				6A1634891607650E0012DC9A /* wallpaper0.jpg */,
 				6A163466160761040012DC9A /* MainStoryboard.storyboard */,
 				6A163469160761040012DC9A /* PrincipalViewController.h */,
 				6A16346A160761040012DC9A /* PrincipalViewController.m */,
@@ -225,6 +228,7 @@
 			files = (
 				6A16345F160761040012DC9A /* InfoPlist.strings in Resources */,
 				6A163468160761040012DC9A /* MainStoryboard.storyboard in Resources */,
+				6A16348A1607650E0012DC9A /* wallpaper0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
